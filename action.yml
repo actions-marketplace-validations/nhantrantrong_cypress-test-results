@@ -1,0 +1,24 @@
+name: Retrieve Cypress Test Run Results
+description: Retrieve the test run results summary of Cypress
+author: Nhan Tran
+outputs:
+  numOfTestFiles:
+    description: "Total number of test files"
+  numOfTests:
+    description: "Total number of tests"
+  numOfPassed:
+    description: "Total number of tests with PASSED result"
+  numOfFailed:
+    description: "Total number of tests with FAILED result"
+  numOfPending:
+    description: "Total number of tests with PENDING result"
+  numOfSkipped:
+    description: "Total number of tests with SKIPPED result"
+  duration:
+    description: "Cypress tests executed duration"
+  dashboardUrl:
+    description: "Cypress Dashboard URL if the run was recorded"
+
+runs:
+  using: node12
+  main: src/index.js

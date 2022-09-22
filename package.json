@@ -1,0 +1,45 @@
+{
+  "name": "cypress-test-results",
+  "version": "1.0.0",
+  "description": "This is repository to retrieve cypress test results summary after execution in github action",
+  "main": "src",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "reinstall": "rm -rf node_modules && npm install",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nhan Tran",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "16.11.35",
+    "@vercel/ncc": "0.33.1",
+    "husky": "7.0.4",
+    "markdown-link-check": "3.10.2",
+    "prettier": "2.6.2",
+    "stop-build": "1.1.0"
+  },
+  "dependencies": {
+    "cypress": "^10.8.0",
+    "ci-info": "^3.3.0",
+    "common-tags": "^1.8.2",
+    "nodemailer": "^6.7.2",
+    "prettier": "2.5.1",
+    "semantic-release": "^19.0.2",
+    "@actions/cache": "1.0.11",
+    "@actions/core": "1.8.2",
+    "@actions/exec": "1.1.1",
+    "@actions/io": "1.1.2",
+    "@octokit/core": "3.6.0",
+    "argument-vector": "1.0.2",
+    "debug": "4.3.4",
+    "execa": "6.1.0",
+    "find-yarn-workspace-root": "2.0.0",
+    "got": "11.8.3",
+    "hasha": "5.2.2",
+    "quote": "0.4.0"
+  }
+}
