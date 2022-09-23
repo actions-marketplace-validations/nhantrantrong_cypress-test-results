@@ -43,8 +43,8 @@ function getStatusEmoji(status) {
     const emoji = {
         passed: '✅',
         failed: '❌',
-        pending: '⌛',
-        skipped: '⚠️',
+        pending: '✋',
+        skipped: '↩️',
     }
     return emoji[status]
 }
@@ -145,6 +145,7 @@ function collectCypressTestResults(on, config) {
         core.setOutput('numOfPending', totals.pending)
         core.setOutput('numOfSkipped', totals.skipped)
         core.setOutput('duration', formattedDuration)
+        core.setOutput('durationInMilliseconds', afterRun.totalDuration)
         core.setOutput('dashboardUrl', afterRun.runUrl)
     })
 }
