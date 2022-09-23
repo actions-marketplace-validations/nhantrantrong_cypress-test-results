@@ -15,7 +15,9 @@ outputs:
   numOfSkipped:
     description: "Total number of tests with SKIPPED result"
   duration:
-    description: "Cypress tests executed duration"
+    description: "Cypress tests executed duration which is already formatted in hms"
+  durationInMilliseconds:
+    description: "Cypress tests executed duration in milliseconds"
   dashboardUrl:
     description: "Cypress Dashboard URL if the run was recorded"
 
