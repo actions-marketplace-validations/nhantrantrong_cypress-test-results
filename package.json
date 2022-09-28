@@ -1,6 +1,6 @@
 {
   "name": "cypress-test-results",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This is repository to retrieve cypress test results summary after execution in github action",
   "main": "src",
   "files": [
