@@ -31,7 +31,7 @@ Add this plugin as a dev dependency to your Cypress project
 # install using NPM
 $ npm i -D cypress-test-results
 # or using Yarn
-$ yarn add -D test-results
+$ yarn add -D cypress-test-results
 ```
 
 Register the plugin from your **_cypress.config.js_** file

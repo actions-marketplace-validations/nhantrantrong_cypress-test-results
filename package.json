@@ -1,6 +1,6 @@
 {
   "name": "cypress-test-results",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "This is repository to retrieve cypress test results summary after execution in github action",
   "main": "src",
   "files": [
@@ -13,7 +13,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "cypress-plugin"
+    "cypress-plugin",
+    "cypress",
+    "cypress-io",
+    "github-actions",
+    "action"
   ],
   "author": "Nhan Tran",
   "license": "ISC",
